@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+    height: 80%;
+    border: 1px solid black;
+}
+
+.sky{
+    position: absolute;
+    width: 200%;
+    height: 80%;
+    background-image: url(img/sky.png);
+    background-size: 50% 120%;
+}
+
+.land{
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    height: 20%;
+    background-image: url(img/land.png);
+}
+
+.bird{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 33px;
+    height: 26px;
+    background-image: url(img/bird.png);
+    background-position: -8px -10px;
+    z-index: 1;
+}
