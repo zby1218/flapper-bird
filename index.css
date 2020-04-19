@@ -13,6 +13,20 @@ body{
     border: 1px solid black;
 }
 
+.show{
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:100%;
+    font-size: 40px;
+    color: silver;
+    background-color:  rgba(47, 51, 47 , 0.7);
+    
+}
+
 .sky{
     position: absolute;
     width: 200%;
@@ -31,11 +45,33 @@ body{
 
 .bird{
     position: absolute;
-    top: 40%;
+    top: 200px;
     left: 40%;
     width: 33px;
     height: 26px;
     background-image: url(img/bird.png);
     background-position: -8px -10px;
-    z-index: 1;
+    /* z-index: 1; */
+}
+
+.pipeDown{
+    position: absolute;
+    top: 0;
+  
+    width: 52px;
+    height:200px;
+    background: url(img/pipeDown.png);
+    background-position:left bottom;
+    /* background-size: 100% 100%; */
+}
+
+.pipeUp{
+    position: absolute;
+    bottom: 0;
+   
+    width: 52px;
+    height:200px;
+    background: url(img/pipeUp.png);
+    background-position:left top;
+    /* background-size: 100% 100%; */
 }
